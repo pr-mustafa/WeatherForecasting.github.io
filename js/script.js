@@ -1,7 +1,7 @@
 var weathers = []
 var inputSearch = document.querySelector('#input-search');
 async function displayWeathers(value) {
-  var response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=3b7918e7e64e4b85b14151456241604&q=${value}&days=7`);
+  var response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=3b7918e7e64e4b85b14151456241604&q=${value}&days=7`);
   var finalResponse = await response.json();
   var contentText = "";
   var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -83,7 +83,7 @@ displayWeathers("Dubai");
 
 async function SearchWeather(value) {
 
-  var response = await fetch(`http://api.weatherapi.com/v1/search.json?key=3b7918e7e64e4b85b14151456241604&q=${value}`);
+  var response = await fetch(`https://api.weatherapi.com/v1/search.json?key=3b7918e7e64e4b85b14151456241604&q=${value}`);
   var finalResponse = await response.json();
   displayWeathers(finalResponse[0].name);
 }
