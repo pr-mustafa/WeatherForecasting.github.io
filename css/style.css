@@ -1,0 +1,97 @@
+:root {
+  --main-color: #1e202b;
+  --second-color: #262936;
+  --third-color: #2d303d;
+  --fourth-color: #323544;
+  --blue-color: #009ad8;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+}
+.text-color-blue-prime {
+  color: var(--blue-color) !important;
+  background-color: var(--main-color);
+}
+#logo-name {
+  font-size: 18px;
+}
+#logo-caption {
+  font-size: 10px;
+}
+.navbar {
+  background-color: var(--main-color) !important;
+}
+.nav-link {
+  color: white !important;
+  border: 1px solid transparent;
+  border-radius: 30px !important;
+  padding: 2px 30px !important;
+}
+.nav-link:hover,
+.nav-link:active {
+  color: var(--blue-color) !important;
+  border: 1px solid var(--blue-color) !important;
+  border-radius: 30px !important;
+  padding: 2px 30px !important;
+}
+
+#button-addon2 {
+  background-color: var(--blue-color);
+}
+#weather-body {
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-color: var(--main-color);
+}
+#input-search,
+#subscribe-input {
+  color: white;
+  border: none;
+  background-color: var(--main-color);
+  text-indent: 10px;
+  box-shadow: none;
+}
+#input-search::placeholder,
+#subscribe-input::placeholder {
+  color: gray;
+}
+#input-btn {
+  background-color: var(--blue-color);
+  color: white;
+  z-index: 999999999;
+  right: 4px;
+  bottom: 4px;
+  padding: 10px 20px;
+}
+.navbar-toggler-icon {
+  color: white !important;
+}
+#card {
+  background-color: var(--second-color);
+}
+#card-two {
+  background-color: var(--third-color);
+}
+#footer {
+  background-color: var(--third-color);
+}
+#subscribe-input {
+  padding-right: 20px;
+}
+#condition {
+  padding-top: 4px;
+}
+.fa-brands:hover {
+  background-color: var(--blue-color);
+  color: white !important;
+}
+.fa-brands {
+  font-size: 22px;
+  transition: 0.7s;
+}
+
+.navbar-toggler {
+  background-color: white;
+  box-shadow: none !important;
+}

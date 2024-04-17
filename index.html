@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-5">
+      <div class="container px-5">
+        <a class="navbar-brand" href="#">
+          <div class="d-flex align-items-center">
+            <img
+              src="images/logo.png"
+              alt="weather logo"
+              width="65"
+              height="38"
+            />
+            <div class="d-flex flex-column ms-3">
+              <h1 id="logo-name" class="fw-bold text-white">Weather</h1>
+              <small id="logo-caption" class="text-white"
+                >tagline goes here</small
+              >
+            </div>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span id="span-toggle" class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live camera</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="weather-body">
+      <div class="input-group container-lg pt-5 px-5">
+        <input
+          id="input-search"
+          type="text"
+          class="form-control rounded-5 py-3"
+          placeholder="Find your location..."
+          aria-label="Recipient's username"
+          aria-describedby="button-addon2"
+        />
+      </div>
+      <div class="container-lg py-5 px-5">
+        <div class="row gy-3" id="mainContainer"></div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="container px-5 py-4">
+        <div class="row pt-3 gy-3">
+          <div class="col-md-8">
+            <div class="input-group flex-grow-1">
+              <input
+                type="text"
+                id="subscribe-input"
+                class="form-control py-3 rounded-pill position-relative w-100"
+                placeholder="Enter your email to subscribe..."
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button
+                id="input-btn"
+                class="btn btn-outline-secondary rounded-pill position-absolute"
+                type="button"
+                id="button-addon2"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <a href="#"
+              ><i
+                class="fa-brands fa-facebook fa-2x text-color-blue-prime p-2 rounded-5"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="fa-brands fa-twitter fa-2x text-color-blue-prime p-2 rounded-5"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="fa-brands fa-google fa-2x text-color-blue-prime p-2 rounded-5"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="fa-brands fa-pinterest fa-2x text-color-blue-prime p-2 rounded-5"
+              ></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <p class="text-white pt-5">
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
