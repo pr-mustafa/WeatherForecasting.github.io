@@ -85,7 +85,7 @@ async function SearchWeather(value) {
 
   var response = await fetch(`https://api.weatherapi.com/v1/search.json?key=3b7918e7e64e4b85b14151456241604&q=${value}`);
   var finalResponse = await response.json();
-  if(finalResponse[0].name != undefine){
+  if(finalResponse[0].name != undefined){
      displayWeathers(finalResponse[0].name);
   }
  
